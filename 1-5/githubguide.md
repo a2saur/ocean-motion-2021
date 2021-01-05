@@ -27,15 +27,15 @@ Remember:
 
 go into your ocean-motion-2021 repository and type: 
 
-	``find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch``
+	`find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch`
 
 Then type: (this adds .DS_Store into a list of files to be ignored by git)
 
-	``echo .DS_Store >> .gitignore``
+	`echo .DS_Store >> .gitignore`
 
 Then type: (this commits the list of files to be ignored by git)
- 	``git add .gitignore``
-	``git commit -m '.DS_Store banished!'``
+ 	`git add .gitignore`
+	`git commit -m '.DS_Store banished!'`
 
 9. Now practice making a change to your repository and pushing that change: In the 1-5 folder, open newyear.txt in Sublime and add a couple sentences about the conversation you had with your partner. 
 
