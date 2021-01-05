@@ -23,9 +23,21 @@ Remember:
 	* Type git remote add upstream https://github.com/madesai22/ocean-motion-2021
 	* Now, type git remote -v again. You should see two remotes: One called origin that points to your own repository, and one called upstream that points to the original. 
 
-	**STOP HERE SO WE CAN make sure to exclude .DS_store files**
+	**Important!!!**
 
-9. Practice making a change to your repository and pushing that change: In the 1-5 folder, open newyear.txt in Sublime and add a couple sentences about the conversation you had with your partner. 
+go into your ocean-motion-2021 repository and type: 
+
+	``find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch``
+
+Then type: (this adds .DS_Store into a list of files to be ignored by git)
+
+	``echo .DS_Store >> .gitignore``
+
+Then type: (this commits the list of files to be ignored by git)
+ 	``git add .gitignore``
+	``git commit -m '.DS_Store banished!'``
+
+9. Now practice making a change to your repository and pushing that change: In the 1-5 folder, open newyear.txt in Sublime and add a couple sentences about the conversation you had with your partner. 
 
 10. Now add the change to your repository
 	* Type **git add newyear.txt** This lets git know you're ready to make a change.
