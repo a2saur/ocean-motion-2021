@@ -1,0 +1,24 @@
+#!/bin/csh
+
+
+set dir = ./test/
+set dhdir = /Users/brownscholar/Desktop/A2 Internship/data/dynamic-height/
+set dendir = /Users/brownscholar/Desktop/A2 Internship/data/density/
+set auxdir = /Users/brownscholar/Desktop/A2 Internship/data/aux/
+set outdir = /Users/brownscholar/Desktop/A2 Internship/data/omega/
+set fileinfo = {$dir}info_pr.dat
+set filedh =  {$dhdir}/dynamic_height_930101.gr
+set filest =  {$dendir}/density_930101.gr
+set filestm = {$auxdir}/st0/930101_st0.dat
+set filequ =  {$outdir}/u/930101_qu.gr
+set fileqv =  {$outdir}/v/930101_qv.gr
+set fileqdi = {$auxdir}/qdi/930101_qdi.gr
+
+./vectorq.exe << !
+'$fileinfo'	#>>>>>Escribe info file info.dat:
+'$filedh'	#>>>>>Escribe fichero de altura Dinamica:
+'$filest'	#>>>>>Escribe fichero de densidad:
+'$filestm'	#>>>>>Escribe fichero de densidad promedio:
+'$filequ'	#>>>>>Escribe fichero Qu:
+'$fileqv'	#>>>>>Escribe fichero Qv:
+'$fileqdi'	#>>>>>Escribe fichero Qdi:
