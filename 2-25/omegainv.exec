@@ -5,9 +5,9 @@ set dir = ./test/
 set fileinfo = {$dir}info_pr.dat
 set outdir = /Users/brownscholar/Desktop/A2_Internship/data/omega/
 set auxdir = /Users/brownscholar/Desktop/A2_Internship/data/aux/
-set filestm = {$auxdir}/st0/971231_st0.dat
-set fileqdi = {$auxdir}/qdi/971231_qdi.gr
-set filew =  {$outdir}w/971231_ww.gr
+set filestm = {$auxdir}/st0/940518_st0.dat
+set fileqdi = {$auxdir}/qdi/940518_qdi.gr
+set filew =  {$outdir}w/940518_ww.gr
 
 ./omegainv.exe << !
 '$fileinfo' 	#>>>>>Escribe info file info.dat:
