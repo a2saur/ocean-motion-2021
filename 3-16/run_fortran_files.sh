@@ -9,8 +9,9 @@ cd /Users/brownscholar/Desktop/A2_Internship/InternshipGit/ocean-motion-2021/2-2
 gfortran -O3 -o vectorq.exe vectorq.f
 gfortran -O3 -o omegainv.exe omegainv.f
 
-filename='/Users/brownscholar/Desktop/A2_Internship/InternshipGit/ocean-motion-2021/3-16/date_list.txt'
+filename='/Users/brownscholar/Desktop/A2_Internship/InternshipGit/ocean-motion-2021/3-23/date_list.txt'
 while read date; do 
+	clear
 	echo $date
 
 	python3 writing-exec-file.py $date
