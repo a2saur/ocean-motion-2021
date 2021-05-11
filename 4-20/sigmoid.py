@@ -4,22 +4,23 @@ import numpy as np
 # you are chosing between two things
 # Example: "Should I buy white sneakers instead of black sneakers?"
 # or "Should I take AP chemistry?"  
-decision = "your - decision - here"
+decision = "Should I go for a walk?"
 
 # Pick three factors that affect your decision and write them as strings
-factor_1 = "factor - 1 "
-factor_2 = "factor - 2"
-factor_3 = "factor - 3"
+factor_1 = "Is it percipitating?"
+factor_2 = "Am I sore/tired?"
+factor_3 = "Is it sunny outside/is it a nice day?"
+factor_4 = "How far am I with work?"
 
 # think about how much each of these factors matter
 # create a numpy array of length 3 where the first
 # value is how much the first factor matters, the 
 # second value is how much the second factor matters
 # etc:
-weights = #your code here
+weights = np.array([-10, -4, 5, 3])#your code here
 
 # pick a value for the bias: explain to your partner what this means
-bias = -9 # change this
+bias = -3 # change this
 # keep your weights and biases on the same scale
 # for example if your weights are 6, 7, 9 don't make your bias 100
 
@@ -29,7 +30,7 @@ bias = -9 # change this
 # but you think that probably won't happen, the first value in  
 # your array might be 0.10, meaning you think you are 10% likely to 
 # get your shoes dirty
-factor_values = # your code here
+factor_values = np.array([0.1, 0.05, 0.7, 0.6])# your code here
 
 # now the perceptron is going to calculate the outcome. This is
 # basically the same as the perceptron example except for the 
@@ -46,6 +47,7 @@ print("*************************")
 print(factor_1+": "+str(factor_values[0]*100)+"% | weight: "+ str(weights[0]))
 print(factor_2+": "+str(factor_values[1]*100)+ "%| weight: "+ str(weights[1]))
 print(factor_3+": "+str(factor_values[2]*100)+"% | weight: "+ str(weights[2]))
+print(factor_4+": "+str(factor_values[3]*100)+"% | weight: "+ str(weights[2]))
 print("bias = "+str(bias))
 print("*************************")
 print("calculating decision ...")
